@@ -1,0 +1,10 @@
+framework module NCZip {
+  umbrella header "NCZip.h"
+
+  export *
+  module * { export * }
+}
+
+module NCZip.Swift {
+    header "NCZip-Swift.h"
+}

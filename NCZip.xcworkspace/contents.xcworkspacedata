@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NCZipSample/NCZipSample.xcodeproj">
+      location = "container:NCZip/NCZip.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:NCZip/NCZip.xcodeproj">
+      location = "group:NCZipSample/NCZipSample.xcodeproj">
    </FileRef>
 </Workspace>
