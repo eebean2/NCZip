@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73FDDF4F1CDA555A002BCDEE /* NCZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 73FDDF4E1CDA555A002BCDEE /* NCZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73FDDF561CDA555A002BCDEE /* NCZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDDF4B1CDA555A002BCDEE /* NCZip.framework */; };
+		73FDDF5B1CDA555A002BCDEE /* NCZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FDDF5A1CDA555A002BCDEE /* NCZipTests.swift */; };
+		73FDDF671CDA5569002BCDEE /* NCZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FDDF651CDA5569002BCDEE /* NCZip.swift */; };
+		73FDDF681CDA5569002BCDEE /* NCZipCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73FDDF661CDA5569002BCDEE /* NCZipCode.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73FDDF571CDA555A002BCDEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73FDDF421CDA555A002BCDEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FDDF4A1CDA555A002BCDEE;
+			remoteInfo = NCZip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73FDDF4B1CDA555A002BCDEE /* NCZip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCZip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FDDF4E1CDA555A002BCDEE /* NCZip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCZip.h; sourceTree = "<group>"; };
+		73FDDF501CDA555A002BCDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73FDDF551CDA555A002BCDEE /* NCZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FDDF5A1CDA555A002BCDEE /* NCZipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCZipTests.swift; sourceTree = "<group>"; };
+		73FDDF5C1CDA555A002BCDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73FDDF651CDA5569002BCDEE /* NCZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCZip.swift; sourceTree = "<group>"; };
+		73FDDF661CDA5569002BCDEE /* NCZipCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NCZipCode.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73FDDF471CDA555A002BCDEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FDDF521CDA555A002BCDEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FDDF561CDA555A002BCDEE /* NCZip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73FDDF411CDA555A002BCDEE = {
+			isa = PBXGroup;
+			children = (
+				73FDDF4D1CDA555A002BCDEE /* NCZip */,
+				73FDDF591CDA555A002BCDEE /* NCZipTests */,
+				73FDDF4C1CDA555A002BCDEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73FDDF4C1CDA555A002BCDEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73FDDF4B1CDA555A002BCDEE /* NCZip.framework */,
+				73FDDF551CDA555A002BCDEE /* NCZipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73FDDF4D1CDA555A002BCDEE /* NCZip */ = {
+			isa = PBXGroup;
+			children = (
+				73FDDF4E1CDA555A002BCDEE /* NCZip.h */,
+				73FDDF651CDA5569002BCDEE /* NCZip.swift */,
+				73FDDF661CDA5569002BCDEE /* NCZipCode.plist */,
+				73FDDF501CDA555A002BCDEE /* Info.plist */,
+			);
+			path = NCZip;
+			sourceTree = "<group>";
+		};
+		73FDDF591CDA555A002BCDEE /* NCZipTests */ = {
+			isa = PBXGroup;
+			children = (
+				73FDDF5A1CDA555A002BCDEE /* NCZipTests.swift */,
+				73FDDF5C1CDA555A002BCDEE /* Info.plist */,
+			);
+			path = NCZipTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73FDDF481CDA555A002BCDEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FDDF4F1CDA555A002BCDEE /* NCZip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73FDDF4A1CDA555A002BCDEE /* NCZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FDDF5F1CDA555A002BCDEE /* Build configuration list for PBXNativeTarget "NCZip" */;
+			buildPhases = (
+				73FDDF461CDA555A002BCDEE /* Sources */,
+				73FDDF471CDA555A002BCDEE /* Frameworks */,
+				73FDDF481CDA555A002BCDEE /* Headers */,
+				73FDDF491CDA555A002BCDEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCZip;
+			productName = NCZip;
+			productReference = 73FDDF4B1CDA555A002BCDEE /* NCZip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73FDDF541CDA555A002BCDEE /* NCZipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FDDF621CDA555A002BCDEE /* Build configuration list for PBXNativeTarget "NCZipTests" */;
+			buildPhases = (
+				73FDDF511CDA555A002BCDEE /* Sources */,
+				73FDDF521CDA555A002BCDEE /* Frameworks */,
+				73FDDF531CDA555A002BCDEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73FDDF581CDA555A002BCDEE /* PBXTargetDependency */,
+			);
+			name = NCZipTests;
+			productName = NCZipTests;
+			productReference = 73FDDF551CDA555A002BCDEE /* NCZipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73FDDF421CDA555A002BCDEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Little Man Apps";
+				TargetAttributes = {
+					73FDDF4A1CDA555A002BCDEE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					73FDDF541CDA555A002BCDEE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 73FDDF451CDA555A002BCDEE /* Build configuration list for PBXProject "NCZip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 73FDDF411CDA555A002BCDEE;
+			productRefGroup = 73FDDF4C1CDA555A002BCDEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73FDDF4A1CDA555A002BCDEE /* NCZip */,
+				73FDDF541CDA555A002BCDEE /* NCZipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73FDDF491CDA555A002BCDEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FDDF681CDA5569002BCDEE /* NCZipCode.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FDDF531CDA555A002BCDEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73FDDF461CDA555A002BCDEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FDDF671CDA5569002BCDEE /* NCZip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FDDF511CDA555A002BCDEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FDDF5B1CDA555A002BCDEE /* NCZipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73FDDF581CDA555A002BCDEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73FDDF4A1CDA555A002BCDEE /* NCZip */;
+			targetProxy = 73FDDF571CDA555A002BCDEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73FDDF5D1CDA555A002BCDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73FDDF5E1CDA555A002BCDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73FDDF601CDA555A002BCDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NCZip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LittleManApps.NCZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73FDDF611CDA555A002BCDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NCZip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LittleManApps.NCZip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		73FDDF631CDA555A002BCDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NCZipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LittleManApps.NCZipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		73FDDF641CDA555A002BCDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NCZipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LittleManApps.NCZipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73FDDF451CDA555A002BCDEE /* Build configuration list for PBXProject "NCZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FDDF5D1CDA555A002BCDEE /* Debug */,
+				73FDDF5E1CDA555A002BCDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73FDDF5F1CDA555A002BCDEE /* Build configuration list for PBXNativeTarget "NCZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FDDF601CDA555A002BCDEE /* Debug */,
+				73FDDF611CDA555A002BCDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73FDDF621CDA555A002BCDEE /* Build configuration list for PBXNativeTarget "NCZipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FDDF631CDA555A002BCDEE /* Debug */,
+				73FDDF641CDA555A002BCDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73FDDF421CDA555A002BCDEE /* Project object */;
+}
