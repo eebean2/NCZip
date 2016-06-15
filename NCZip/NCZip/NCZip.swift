@@ -34,6 +34,13 @@ import UIKit
 
 public class NCZip {
     
+    @available(*, unavailable, message="init cannot be empty") init() {}
+    @available(*, unavailable, renamed="remove") func removeSingleLimtiedCounty(county: String) { }
+    @available(*, unavailable, renamed="silent") public var runSilent = false
+    @available(*, unavailable, renamed="limitBy") func addCountyLimit(county: String) { }
+    @available(*, unavailable, renamed="limitByMultiple") func addMultipleCountyLimits(counties: [String]) { }
+    @available(*, unavailable, renamed="removeAllLimits") func removeAllCountyLimits() { }
+    
     /// Read-Only: Returns the current zipcode
     
     public var zip : Int { return internalZip }
@@ -64,7 +71,7 @@ public class NCZip {
     
     /// No error mode, enableing will turn off return of NSErrors (Not recommended)
     
-    public var runSilent = false
+    public var silent = false
     
     private var internalZip = Int()
     private var internalCity = String()
@@ -73,9 +80,6 @@ public class NCZip {
     private var internalTransit = Double()
     private var internalLimits = [String]()
     private let NCZipErrorDomain = "NCZipErrorDomain"
-    
-    @available(*, unavailable, message="init cannot be empty") init() {}
-    
 
     /**
      Initilize will full location data, mostly used internally; limited to North Carolina only currently
@@ -128,7 +132,7 @@ public class NCZip {
      - Parameter county: A single county name
      */
     
-    public func addCountyLimit(county: String) {
+    public func limitBy(county county: String) {
         let county = county.uppercaseString
         internalLimits.append(county)
     }
@@ -139,7 +143,7 @@ public class NCZip {
      - Parameter counties: Array of multiple county names
      */
     
-    public func addMultipleCountyLimits(counties: [String]) {
+    public func limitByMultiple(counties counties: [String]) {
         for county in counties {
             let county = county.uppercaseString
             internalLimits.append(county)
@@ -152,20 +156,21 @@ public class NCZip {
      - Parameter county: A single county name
      */
     
-    public func removeSingleLimitedCounty(county: String) {
+    public func remove(county county: String) {
         let county = county.uppercaseString
         let i = internalLimits.indexOf(county)
         internalLimits.removeAtIndex(i!)
+        
     }
     
     /// Removes all counties from the list of limited counties
     
-    public func removeAllCountyLimits() {
+    public func removeAllLimits() {
         internalLimits.removeAll()
     }
     
     // private
-    private func presentAlertWithTitle(title: String, message: String, alertType: UIAlertControllerStyle?, buttons: [UIAlertAction]?) {
+    private func presentAlert(title title: String, message: String, alertType: UIAlertControllerStyle?, buttons: [UIAlertAction]?) {
         var style = UIAlertControllerStyle.Alert
         if alertType != nil {
             style = alertType!
@@ -192,7 +197,7 @@ public class NCZip {
         let tempzip = String(internalZip)
         if tempzip.characters.count != 5 {
             let error = NSError(domain: NCZipErrorDomain, code: 100, userInfo: [NSLocalizedDescriptionKey: "Invalid Zip Code", NSLocalizedFailureReasonErrorKey: "Zip Code must be a 5 digits and from North Carolina",NSLocalizedRecoverySuggestionErrorKey: "Please correct the Zip Code and try again."])
-            if runSilent {
+            if silent {
                 completion(result: nil, error: nil)
             } else {
                 completion(result: nil, error: error)
@@ -237,7 +242,7 @@ public class NCZip {
                                     if self.returnZipIfFail {
                                         completion(result: zc, error: check.error)
                                     } else {
-                                        if self.runSilent {
+                                        if self.silent {
                                             completion(result: nil, error: nil)
                                         } else {
                                             completion(result: nil, error: check.error)
@@ -247,7 +252,7 @@ public class NCZip {
                             })
                             buttonArray.append(button)
                         }
-                        self.presentAlertWithTitle("Which County?", message: "The zipcode \(internalZip) contains multiple counties, which are you in?", alertType: nil, buttons: buttonArray)
+                        self.presentAlert(title: "Which County?", message: "The zipcode \(internalZip) contains multiple counties, which are you in?", alertType: nil, buttons: buttonArray)
                     } else if data.count == 1 {
                         let info = data.values.first as! Dictionary<String, AnyObject>
                         var trans = Double()
@@ -272,7 +277,7 @@ public class NCZip {
                             if returnZipIfFail {
                                 completion(result: zc, error: check.error)
                             } else {
-                                if runSilent {
+                                if silent {
                                     completion(result: nil, error: nil)
                                 } else {
                                     completion(result: nil, error: check.error)
@@ -281,7 +286,7 @@ public class NCZip {
                         }
                     } else {
                         let error = NSError(domain: NCZipErrorDomain, code: -99, userInfo: [NSLocalizedDescriptionKey: "Unknown Error", NSLocalizedRecoverySuggestionErrorKey: "Please try again."])
-                        if runSilent {
+                        if silent {
                             completion(result: nil, error: nil)
                         } else {
                             completion(result: nil, error: error)
